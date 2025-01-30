@@ -28,9 +28,16 @@
       virtualedit = "onemore";
     };
 
+    extraConfigLua = ''
+      if vim.env.SSH_TTY then
+          vim.opt.clipboard = ""
+      else
+          vim.opt.clipboard = "unnamedplus"
+      end
+    '';
+
     # Clipboard.
     clipboard = {
-      register = "unnamedplus";
       providers.xclip.enable = true;
     };
 
