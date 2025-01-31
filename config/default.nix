@@ -1,4 +1,10 @@
-{ config, pkgs, lib, ... }: {
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
   imports = [
     ./plugins
     ./keymap.nix
@@ -41,7 +47,6 @@
       providers.xclip.enable = true;
     };
 
-
     # Packages
     extraPackages = [
       pkgs.nixfmt-rfc-style
@@ -55,31 +60,41 @@
         mode = [ "n" ];
         key = "<C-z>";
         action = "u";
-        options = { desc = "Undo"; };
+        options = {
+          desc = "Undo";
+        };
       }
       {
         mode = [ "v" ];
         key = "<C-z>";
         action = "u==gv";
-        options = { desc = "Undo"; };
+        options = {
+          desc = "Undo";
+        };
       }
       {
         mode = [ "n" ];
         key = "<C-s>";
         action = ":update<CR>";
-        options = { desc = "Save"; };
+        options = {
+          desc = "Save";
+        };
       }
       {
         mode = [ "i" ];
         key = "<C-s>";
         action = "<C-O>:update<CR>";
-        options = { desc = "Save"; };
+        options = {
+          desc = "Save";
+        };
       }
       {
         mode = [ "i" ];
         key = "<C-s>";
         action = "<C-C>:update<CR>";
-        options = { desc = "Save"; };
+        options = {
+          desc = "Save";
+        };
       }
       {
         mode = [ "v" ];

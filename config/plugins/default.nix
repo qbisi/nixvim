@@ -1,6 +1,5 @@
 {
   imports = [
-    ./editor
     ./toggleterm.nix
     ./neo-tree.nix
   ];

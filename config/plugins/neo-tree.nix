@@ -1,5 +1,8 @@
 {
-  plugins.neo-tree.enable = true;
+  plugins.neo-tree = {
+    enable = true;
+    # filesystem.hijackNetrwBehavior = "disabled";
+  };
   keymaps = [
     {
       mode = [ "n" ];
