@@ -44,7 +44,7 @@
 
     # Packages
     extraPackages = [
-      pkgs.nixpkgs-fmt
+      pkgs.nixfmt-rfc-style
     ];
 
     # keymaps

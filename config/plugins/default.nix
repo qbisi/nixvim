@@ -2,13 +2,8 @@
   imports = [
     ./editor
     ./toggleterm.nix
+    ./neo-tree.nix
   ];
-
-  plugins.which-key.enable = true;
-
-  plugins.mini = {
-    enable = true;
-  };
 
   plugins.lsp = {
     enable = true;
@@ -18,31 +13,18 @@
         enable = true;
         settings.formatting.command = [ "nixfmt" ];
       };
+      pyright.enable = true;
       pylsp = {
         enable = true;
         settings.plugins = {
           black.enabled = true;
-          flake8.enabled = true;
-          isort.enabled = true;
-          jedi.enabled = true;
-          mccabe.enabled = true;
-          pycodestyle.enabled = true;
-          pydocstyle.enabled = true;
-          pyflakes.enabled = true;
-          pylint.enabled = true;
-          rope.enabled = true;
-          yapf.enabled = true;
         };
       };
     };
   };
 
-  # plugins.lsp-format = {
-  #   enable = true;
-  # };
-
   plugins.bufferline = {
-    enable = true;
+    # enable = true;
     settings.options = {
       alwaysShowBufferline = false;
       offsets = [
@@ -56,8 +38,16 @@
     };
   };
 
-  plugins.lualine = {
-    enable = true;
+  plugins = {
+    which-key.enable = true;
+    mini.enable = true;
+    noice.enable = true;
+    notify.enable = true;
+    lualine = {
+      enable = true;
+      settings.options.globalstatus = true;
+    };
+    web-devicons.enable = true;
   };
 
 }

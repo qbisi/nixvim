@@ -13,7 +13,7 @@
 
   keymaps = [
     {
-      mode = [ "n" ];
+      mode = [ "n" "t"];
       key = "<c-\\>";
       action = "<cmd>ToggleTerm<cr>";
       options = {
