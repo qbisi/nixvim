@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }: {
   imports = [
-    ./plugins/plugins.nix
+    ./plugins
     ./keymap.nix
   ];
   config = {
