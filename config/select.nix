@@ -21,30 +21,6 @@
       };
     }
     {
-      mode = [
-        "n"
-        "v"
-      ];
-      key = "<C-S-up>";
-      action = "<S-up><S-up><S-up>";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-    {
-      mode = [
-        "n"
-        "v"
-      ];
-      key = "<C-S-down>";
-      action = "<S-down><S-down><S-down>";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-    {
       mode = [ "n" ];
       key = "<S-left>";
       action = "v<S-left>";
