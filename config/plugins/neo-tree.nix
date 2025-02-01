@@ -1,6 +1,7 @@
 {
   plugins.neo-tree = {
     enable = true;
+    filesystem.hijackNetrwBehavior = "open_current";
     window.mappings."<left>".__raw = ''
       function(state)
         local node = state.tree:get_node()
@@ -26,10 +27,14 @@
       end
     '';
   };
-  keymaps = [{
-    mode = [ "n" ];
-    key = "<leader>e";
-    action = "<cmd>Neotree toggle<CR>";
-    options = { desc = "Toggle Neo-Tree"; };
-  }];
+  keymaps = [
+    {
+      mode = [ "n" ];
+      key = "<leader>e";
+      action = "<cmd>Neotree toggle<CR>";
+      options = {
+        desc = "Toggle Neo-Tree";
+      };
+    }
+  ];
 }
