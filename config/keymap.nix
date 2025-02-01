@@ -13,6 +13,17 @@
       };
     }
     {
+      mode = [
+        "n"
+        "i"
+      ];
+      key = "<C-y>";
+      action = "<cmd>redo<CR>";
+      options = {
+        desc = "Redo";
+      };
+    }
+    {
       mode = [ "n" ];
       key = "<C-s>";
       action = "<cmd>update<CR>";
@@ -68,6 +79,12 @@
       options = {
         desc = "Next Buffer";
       };
+    }
+    {
+      mode = "n";
+      key = "<c-w>";
+      action = "<CMD>bd<CR>";
+      options.desc = "Delete Buffer and Window";
     }
     {
       mode = "n";
