@@ -5,7 +5,7 @@
 {
   imports = [
     ./plugins
-    ./keymap.nix
+    ./keymaps.nix
     ./select.nix
   ];
 
