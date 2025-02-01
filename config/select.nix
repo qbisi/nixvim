@@ -1,5 +1,5 @@
 {
-  config.opts = {
+  opts = {
     keymodel = "startsel,stopsel";
     selection = "exclusive";
   };
