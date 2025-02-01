@@ -5,6 +5,7 @@
       mode = [
         "n"
         "i"
+        "v"
       ];
       key = "<C-z>";
       action = "<cmd>undo<CR>";
@@ -16,6 +17,7 @@
       mode = [
         "n"
         "i"
+        "v"
       ];
       key = "<C-y>";
       action = "<cmd>redo<CR>";
@@ -24,11 +26,15 @@
       };
     }
     {
-      mode = [ "n" ];
+      mode = [
+        "n"
+        "i"
+      ];
       key = "<C-s>";
-      action = "<cmd>update<CR>";
+      action = "<Esc>:update<CR>";
       options = {
         desc = "Save";
+        silent = true;
       };
     }
     # copy/cut to clipboard
@@ -57,15 +63,49 @@
     {
       mode = [
         "n"
+        "i"
         "v"
       ];
-      key = "<A-S-f>";
+      key = "<M-S-f>";
       action = ''
         function()
           vim.lsp.buf.format()
         end
       '';
       lua = true;
+    }
+    # Window movement.
+    {
+      mode = [ "n" ];
+      key = "<M-left>";
+      action = "<c-w>h";
+      options = {
+        # remap = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<M-down>";
+      action = "<c-w>j";
+      options = {
+        # remap = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<M-up>";
+      action = "<c-w>k";
+      options = {
+        # remap = true;
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<M-right>";
+      action = "<c-w>l";
+      options = {
+        # remap = true;
+      };
     }
     # Buffer movement
     {
@@ -87,13 +127,7 @@
     {
       mode = "n";
       key = "<c-w>";
-      action = "<CMD>bd<CR>";
-      options.desc = "Delete Buffer and Window";
-    }
-    {
-      mode = "n";
-      key = "<leader>bd";
-      action = "<CMD>bd<CR>";
+      action = "<cmd>only|bdelete<CR>";
       options.desc = "Delete Buffer and Window";
     }
     # Misc

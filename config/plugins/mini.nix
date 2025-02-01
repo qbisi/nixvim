@@ -11,10 +11,10 @@
           up = "<M-up>";
 
           # Move current line in Normal mode
-          line_left = "<M-left>";
-          line_right = "<M-right>";
-          line_down = "<M-down>";
-          line_up = "<M-up>";
+          line_left = "<C-M-left>";
+          line_right = "<C-M-right>";
+          line_down = "<C-M-down>";
+          line_up = "<C-M-up>";
         };
 
         options = {

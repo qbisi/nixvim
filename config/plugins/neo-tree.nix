@@ -1,6 +1,7 @@
 {
   plugins.neo-tree = {
     enable = true;
+    closeIfLastWindow = false;
     filesystem = {
       filteredItems = {
         visible = true;

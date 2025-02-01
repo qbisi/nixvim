@@ -7,6 +7,7 @@
     ./mini.nix
     ./bufferline.nix
     ./which-key.nix
+    ./gitsigns.nix
   ];
 
   plugins.lsp = {
