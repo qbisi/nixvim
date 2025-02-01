@@ -5,6 +5,7 @@
     ./neo-tree.nix
     ./lualine.nix
     ./mini.nix
+    ./bufferline.nix
   ];
 
   plugins.lsp = {
@@ -25,25 +26,8 @@
     };
   };
 
-  plugins.bufferline = {
-    # enable = true;
-    settings.options = {
-      alwaysShowBufferline = false;
-      offsets = [
-        {
-          filetype = "neo-tree";
-          text = "Neo-Tree";
-          separator = true;
-          text_align = "left";
-        }
-      ];
-    };
-  };
-
   plugins = {
     auto-session.enable = true;
-    which-key.enable = true;
-    # mini.enable = true;
     noice.enable = true;
     notify.enable = true;
     web-devicons.enable = true;

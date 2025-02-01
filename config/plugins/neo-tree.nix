@@ -45,10 +45,18 @@
   keymaps = [
     {
       mode = [ "n" ];
-      key = "<leader>e";
+      key = "<leader>ee";
       action = "<cmd>Neotree toggle<CR>";
       options = {
         desc = "Toggle Neo-Tree";
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>eb";
+      action = "<cmd>Neotree buffers<CR>";
+      options = {
+        desc = "Toggle Neo-Tree buffers";
       };
     }
   ];
