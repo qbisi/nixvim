@@ -32,6 +32,10 @@
     noice.enable = true;
     notify.enable = true;
     web-devicons.enable = true;
+    treesitter = {
+      enable = true;
+      settings.highlight.enable = true;
+    };
   };
 
 }
