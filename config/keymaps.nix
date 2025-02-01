@@ -42,6 +42,17 @@
       key = "<C-x>";
       action = ''"*d'';
     }
+    # cursor move
+    {
+      mode = [ "n" ];
+      key = "<C-up>";
+      action = "3k";
+    }
+    {
+      mode = [ "n" ];
+      key = "<C-down>";
+      action = "3j";
+    }
     # formatter
     {
       mode = [
