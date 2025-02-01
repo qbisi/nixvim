@@ -3,7 +3,7 @@
     keymodel = "startsel,stopsel";
     selection = "exclusive";
   };
-  keymaps = {
+  keymaps = [
     {
       mode = [ "n" ];
       key = "<S-up>";
@@ -40,5 +40,5 @@
         silent = true;
       };
     }
-  };
+  ];
 }

@@ -1,6 +1,4 @@
 {
-  # keymaps
-
   keymaps = [
     # windows-like
     {
