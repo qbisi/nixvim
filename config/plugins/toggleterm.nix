@@ -2,18 +2,25 @@
   plugins.toggleterm = {
     enable = true;
     settings = {
-      size = ''
-        function()
-            return vim.o.lines * 0.5
-        end
-      '';
+      direction = "float";
+      float_opts = {
+        border = "curved";
+      };
+      # size = ''
+      #   function()
+      #       return vim.o.lines * 0.8
+      #   end
+      # '';
       # open_mapping = "[[<c-\\>]]";
     };
   };
 
   keymaps = [
     {
-      mode = [ "n" "t"];
+      mode = [
+        "n"
+        "t"
+      ];
       key = "<c-\\>";
       action = "<cmd>ToggleTerm<cr>";
       options = {
