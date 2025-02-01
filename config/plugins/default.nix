@@ -4,6 +4,7 @@
     ./telescope.nix
     ./neo-tree.nix
     ./lualine.nix
+    ./mini.nix
   ];
 
   plugins.lsp = {
@@ -42,7 +43,7 @@
   plugins = {
     auto-session.enable = true;
     which-key.enable = true;
-    mini.enable = true;
+    # mini.enable = true;
     noice.enable = true;
     notify.enable = true;
     web-devicons.enable = true;
