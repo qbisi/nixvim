@@ -2,17 +2,12 @@
   # windows-like
   keymaps = [
     {
-      mode = [ "n" ];
+      mode = [
+        "n"
+        "i"
+      ];
       key = "<C-z>";
-      action = "u";
-      options = {
-        desc = "Undo";
-      };
-    }
-    {
-      mode = [ "v" ];
-      key = "<C-z>";
-      action = "u==gv";
+      action = "<cmd>undo<CR>";
       options = {
         desc = "Undo";
       };
@@ -20,23 +15,7 @@
     {
       mode = [ "n" ];
       key = "<C-s>";
-      action = ":update<CR>";
-      options = {
-        desc = "Save";
-      };
-    }
-    {
-      mode = [ "i" ];
-      key = "<C-s>";
-      action = "<C-O>:update<CR>";
-      options = {
-        desc = "Save";
-      };
-    }
-    {
-      mode = [ "i" ];
-      key = "<C-s>";
-      action = "<C-C>:update<CR>";
+      action = "<cmd>update<CR>";
       options = {
         desc = "Save";
       };
@@ -89,6 +68,30 @@
       options = {
         desc = "Next Buffer";
       };
+    }
+    {
+      mode = "n";
+      key = "<leader>bd";
+      action = "<CMD>bd<CR>";
+      options.desc = "Delete Buffer and Window";
+    }
+    {
+      mode = "n";
+      key = "<leader>bp";
+      action = "<CMD>BufferLineTogglePin<CR>";
+      options.desc = "Toggle Pin";
+    }
+    {
+      mode = "n";
+      key = "<leader>bP";
+      action = "<CMD>BufferLineGroupClose ungrouped<CR>";
+      options.desc = "Delete Non-Pinned Buffers";
+    }
+    {
+      mode = "n";
+      key = "<leader>bo";
+      action = "<CMD>BufferLineCloseOthers<CR>";
+      options.desc = "Delete Other Buffers";
     }
     # Misc
     {
