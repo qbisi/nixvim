@@ -1,6 +1,6 @@
 {
   plugins.bufferline = {
-    # enable = true;
+    enable = true;
     settings.options = {
       alwaysShowBufferline = false;
       offsets = [
