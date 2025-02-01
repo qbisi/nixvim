@@ -3,6 +3,7 @@
     ./toggleterm.nix
     ./telescope.nix
     ./neo-tree.nix
+    ./lualine.nix
   ];
 
   plugins.lsp = {
@@ -39,14 +40,11 @@
   };
 
   plugins = {
+    auto-session.enable = true;
     which-key.enable = true;
     mini.enable = true;
     noice.enable = true;
     notify.enable = true;
-    lualine = {
-      enable = true;
-      settings.options.globalstatus = true;
-    };
     web-devicons.enable = true;
   };
 

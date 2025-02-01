@@ -1,7 +1,7 @@
 {
   plugins.neo-tree = {
     enable = true;
-    filesystem.hijackNetrwBehavior = "open_current";
+    filesystem.hijackNetrwBehavior = "disabled";
     window.mappings."<left>".__raw = ''
       function(state)
         local node = state.tree:get_node()
