@@ -1,6 +1,7 @@
 {
   imports = [
     ./toggleterm.nix
+    ./telescope.nix
     ./neo-tree.nix
   ];
 
