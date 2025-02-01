@@ -36,7 +36,7 @@
       enable = true;
       settings.highlight.enable = true;
     };
-    direnv.enable = true;
+    # direnv.enable = true;
   };
 
 }
