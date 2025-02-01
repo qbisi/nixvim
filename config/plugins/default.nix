@@ -6,6 +6,7 @@
     ./lualine.nix
     ./mini.nix
     ./bufferline.nix
+    ./which-key.nix
   ];
 
   plugins.lsp = {
