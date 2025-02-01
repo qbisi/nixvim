@@ -147,7 +147,7 @@
     # Buffer movement
     {
       mode = [ "n" ];
-      key = "<s-h>";
+      key = "<S-Tab>";
       action = "<cmd>bprevious<cr>";
       options = {
         desc = "Previous Buffer";
@@ -155,7 +155,7 @@
     }
     {
       mode = [ "n" ];
-      key = "<s-l>";
+      key = "<Tab>";
       action = "<cmd>bnext<cr>";
       options = {
         desc = "Next Buffer";
