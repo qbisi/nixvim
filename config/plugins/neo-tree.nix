@@ -10,7 +10,7 @@
           "thumbs.db"
         ];
       };
-      hijackNetrwBehavior = "disabled";
+      # hijackNetrwBehavior = "disabled";
       useLibuvFileWatcher = true;
     };
     window = {
