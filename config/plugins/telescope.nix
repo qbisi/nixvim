@@ -72,7 +72,7 @@
   ];
 
   plugins.telescope = {
-    enable = false;
+    enable = ture;
 
     extensions = {
       file-browser = {
