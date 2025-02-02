@@ -41,6 +41,7 @@
       enable = true;
       settings.highlight.enable = true;
     };
+    typst-vim.enable = true;
     # direnv.enable = true;
   };
 

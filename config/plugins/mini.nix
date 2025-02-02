@@ -3,6 +3,14 @@
   plugins.mini = {
     enable = true;
     modules = {
+      comment = {
+        mappings = {
+          comment = "<M-/>";
+          comment_line = "<M-/>";
+          comment_visual = "<M-/>";
+          textobject = "<M-/>";
+        };
+    };
       move = {
         mappings = {
           # Move visual selection in Visual mode. Defaults are Alt (Meta) + hjkl.
