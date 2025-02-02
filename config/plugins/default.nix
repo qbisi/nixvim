@@ -8,6 +8,7 @@
     ./bufferline.nix
     ./which-key.nix
     ./gitsigns.nix
+    ./lazygit-nvim.nix
   ];
 
   plugins.lsp = {

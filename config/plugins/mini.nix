@@ -3,14 +3,6 @@
   plugins.mini = {
     enable = true;
     modules = {
-      comment = {
-        mappings = {
-          comment = "<c-/>";
-          comment_line = "<c-/>";
-          comment_visual = "<c-/>";
-          textobject = "<c-/>";
-        };
-      };
       move = {
         mappings = {
           # Move visual selection in Visual mode. Defaults are Alt (Meta) + hjkl.
@@ -28,7 +20,7 @@
 
         options = {
           # Automatically reindent selection during linewise vertical move
-          reindent_linewise = true;
+          reindent_linewise = false;
         };
       };
     };

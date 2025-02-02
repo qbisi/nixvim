@@ -25,7 +25,6 @@
       key = "<S-left>";
       action = "v<S-left>";
       options = {
-        noremap = true;
         silent = true;
       };
     }
@@ -34,7 +33,6 @@
       key = "<S-right>";
       action = "v<S-right>";
       options = {
-        noremap = true;
         silent = true;
       };
     }

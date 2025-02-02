@@ -31,6 +31,8 @@
     ic = true;
     # Keymodel.
     virtualedit = "onemore";
+    # Allow move across lines.
+    whichwrap = "b,s,h,l,<,>";
   };
 
   extraConfigLua = ''
@@ -47,8 +49,8 @@
   };
 
   # Packages
-  extraPackages = [
-    pkgs.nixfmt-rfc-style
+  extraPackages = with pkgs; [
+    nixfmt-rfc-style
   ];
 
 }
