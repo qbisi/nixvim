@@ -14,7 +14,21 @@
   # Color scheme.
   colorschemes.catppuccin = {
     enable = true;
-    settings.flavour = "macchiato";
+    settings = {
+      transparent_background = true;
+      flavour = "macchiato";
+      integrations = {
+        cmp = true;
+        gitsigns = true;
+        mini = {
+          enabled = true;
+          indentscope_color = "";
+        };
+        notify = false;
+        nvimtree = true;
+        treesitter = true;
+      };
+    };
   };
 
   # Options.

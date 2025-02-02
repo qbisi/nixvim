@@ -32,7 +32,10 @@
   plugins = {
     auto-session.enable = true;
     noice.enable = true;
-    notify.enable = true;
+    notify = {
+      backgroundColour = "#000000";
+      enable = true;
+    };
     web-devicons.enable = true;
     treesitter = {
       enable = true;

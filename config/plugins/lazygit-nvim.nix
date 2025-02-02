@@ -2,7 +2,7 @@
 
 {
   extraPlugins = with pkgs; [
-    lazygit
+    # lazygit
     vimPlugins.lazygit-nvim
   ];
 
