@@ -95,6 +95,15 @@
       key = "<M-right>";
       action = "<c-w>l";
     }
+    {
+      mode = [ "n" ];
+      key = "<leader>w";
+      action = "<c-w>";
+      options = {
+        noremap = true;
+        desc = "window";
+      };
+    }
     # Buffer movement
     {
       mode = [ "n" ];

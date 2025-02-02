@@ -232,9 +232,6 @@
       };
 
       pickers = {
-        find_files = {
-          hijack_netrw = true;
-        };
         colorscheme = {
           enable_preview = true;
         };

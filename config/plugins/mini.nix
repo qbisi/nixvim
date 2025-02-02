@@ -5,10 +5,10 @@
     modules = {
       comment = {
         mappings = {
-          comment = "<M-/>";
-          comment_line = "<M-/>";
-          comment_visual = "<M-/>";
-          textobject = "<M-/>";
+          comment = "<C-_>";
+          comment_line = "<C-_>";
+          comment_visual = "<C-_>";
+          textobject = "<C-_>";
         };
     };
       move = {
@@ -20,10 +20,10 @@
           up = "<M-up>";
 
           # Move current line in Normal mode
-          line_left = "<C-M-left>";
-          line_right = "<C-M-right>";
-          line_down = "<C-M-down>";
-          line_up = "<C-M-up>";
+          line_left = "<S-M-left>";
+          line_right = "<S-M-right>";
+          line_down = "<S-M-down>";
+          line_up = "<S-M-up>";
         };
 
         options = {
@@ -36,7 +36,7 @@
   keymaps = [
     {
       mode = [ "n" ];
-      key = "<leader>bd";
+      key = "<c-w><c-w>";
       action = helpers.mkRaw ''
         function()
         	local bd = require("mini.bufremove").delete
