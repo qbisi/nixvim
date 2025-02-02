@@ -81,7 +81,7 @@
           hidden = true;
         };
       };
-    
+
       frecency = {
         # FIXME: super slow loading
         # enable = true;
@@ -89,20 +89,20 @@
           auto_validate = false;
         };
       };
-    
+
       fzf-native = {
         enable = true;
       };
-    
+
       live-grep-args.enable = true;
-    
+
       ui-select = {
         enable = true;
         settings = {
           __unkeyed.__raw = ''require("telescope.themes").get_dropdown{}'';
         };
       };
-    
+
       undo = {
         enable = true;
         settings = {
@@ -232,6 +232,9 @@
       };
 
       pickers = {
+        find_files = {
+          hijack_netrw = true;
+        };
         colorscheme = {
           enable_preview = true;
         };
@@ -239,3 +242,4 @@
     };
   };
 }
+
