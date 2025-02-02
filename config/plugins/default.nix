@@ -42,7 +42,9 @@
       settings.highlight.enable = true;
     };
     typst-vim.enable = true;
-    # direnv.enable = true;
+    visual-multi = {
+      enable = true;
+    };
   };
 
 }
