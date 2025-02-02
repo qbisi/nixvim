@@ -44,6 +44,10 @@
     typst-vim.enable = true;
     visual-multi = {
       enable = true;
+      settings = {
+        default_mappings = 0;
+        persistent_registers = 1;
+      };
     };
   };
 
