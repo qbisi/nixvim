@@ -1,6 +1,7 @@
 {
   plugins.neo-tree = {
     enable = true;
+    autoCleanAfterSessionRestore = true;
     closeIfLastWindow = false;
     filesystem = {
       filteredItems = {
@@ -15,6 +16,7 @@
       useLibuvFileWatcher = true;
     };
     window = {
+      position = "left";
       mappings = {
         "<left>".__raw = ''
           function(state)

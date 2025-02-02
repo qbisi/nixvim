@@ -79,33 +79,21 @@
       mode = [ "n" ];
       key = "<M-left>";
       action = "<c-w>h";
-      options = {
-        # remap = true;
-      };
     }
     {
       mode = [ "n" ];
       key = "<M-down>";
       action = "<c-w>j";
-      options = {
-        # remap = true;
-      };
     }
     {
       mode = [ "n" ];
       key = "<M-up>";
       action = "<c-w>k";
-      options = {
-        # remap = true;
-      };
     }
     {
       mode = [ "n" ];
       key = "<M-right>";
       action = "<c-w>l";
-      options = {
-        # remap = true;
-      };
     }
     # Buffer movement
     {
@@ -123,12 +111,6 @@
       options = {
         desc = "Next Buffer";
       };
-    }
-    {
-      mode = "n";
-      key = "<c-w>";
-      action = "<cmd>only|bdelete<CR>";
-      options.desc = "Delete Buffer and Window";
     }
     # Misc
     {
