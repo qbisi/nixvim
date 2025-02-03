@@ -43,7 +43,7 @@
       action = ''
         function()
           vim.cmd("enew") -- Create a new empty buffer
-          local filename = vim.fn.input("Save as: ")
+          local filename = vim.fn.input("Save as: ", "", "file")
           if filename ~= "" then
             vim.cmd("write " .. filename)
           else

@@ -50,7 +50,7 @@
     {
       mode = [ "n" ];
       key = "<leader>e";
-      action = "<cmd>Neotree toggle<CR>";
+      action = "<cmd>Neotree toggle reveal<CR>";
       options = {
         desc = "Toggle Neo-Tree";
       };
