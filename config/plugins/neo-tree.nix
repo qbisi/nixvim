@@ -3,6 +3,7 @@
     enable = true;
     autoCleanAfterSessionRestore = true;
     closeIfLastWindow = false;
+    # buffers.followCurrentFile.enabled = true;
     filesystem = {
       filteredItems = {
         visible = true;

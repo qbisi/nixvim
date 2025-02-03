@@ -37,6 +37,22 @@
         silent = true;
       };
     }
+    {
+      mode = ["n" "i"];
+      key = "<C-n>";
+      action = ''
+        function()
+          vim.cmd("enew") -- Create a new empty buffer
+          local filename = vim.fn.input("Save as: ")
+          if filename ~= "" then
+            vim.cmd("write " .. filename)
+          else
+            print("No filename entered. Buffer not saved.")
+          end    
+        end
+      '';
+      lua = true;
+    }
     # copy/cut to clipboard
     {
       mode = [ "v" ];

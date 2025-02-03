@@ -9,6 +9,7 @@
     ./which-key.nix
     ./gitsigns.nix
     ./lazygit-nvim.nix
+    ./visual-multi.nix
   ];
 
   plugins.lsp = {
@@ -42,13 +43,5 @@
       settings.highlight.enable = true;
     };
     typst-vim.enable = true;
-    visual-multi = {
-      enable = true;
-      settings = {
-        default_mappings = 0;
-        persistent_registers = 1;
-      };
-    };
   };
-
 }
