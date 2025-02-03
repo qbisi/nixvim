@@ -10,6 +10,7 @@
     ./gitsigns.nix
     ./lazygit-nvim.nix
     ./visual-multi.nix
+    ./git-conflict.nix
   ];
 
   plugins.lsp = {
