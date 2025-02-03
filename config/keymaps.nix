@@ -157,6 +157,32 @@
         desc = "window";
       };
     }
+    # Tab movement
+    {
+      mode = [ "n" ];
+      key = "<M-0>";
+      action = "<cmd>Tabclose<cr>";
+    }
+    {
+      mode = [ "n" ];
+      key = "<M-4>";
+      action = "4gt";
+    }
+    {
+      mode = [ "n" ];
+      key = "<M-3>";
+      action = "3gt";
+    }
+    {
+      mode = [ "n" ];
+      key = "<M-2>";
+      action = "2gt";
+    }
+    {
+      mode = [ "n" ];
+      key = "<M-1>";
+      action = "1gt";
+    }
     # Buffer movement
     {
       mode = [ "n" ];

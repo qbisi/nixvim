@@ -160,6 +160,10 @@
         action = "help_tags";
         options.desc = "View help tags";
       };
+      "<leader>fk" = {
+        action = "keymaps";
+        options.desc = "View keymaps";
+      };
       "<leader>fm" = {
         action = "man_pages";
         options.desc = "View man pages";
