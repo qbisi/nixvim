@@ -6,6 +6,29 @@
         "n"
         "v"
       ];
+      key = "<C-F>";
+      action = "*''";
+      options = {
+        desc = "Find select";
+        silent = true;
+      };
+    }
+    {
+      mode = [
+        "n"
+        "v"
+      ];
+      key = "<C-H>";
+      action = "cgn";
+      options = {
+        desc = "Replace";
+      };
+    }
+    {
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<C-A>";
       action = "<ESC>ggVG";
       options = {

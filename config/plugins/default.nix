@@ -43,6 +43,11 @@
       settings.highlight.enable = true;
     };
     typst-vim.enable = true;
-    diffview.enable = true;
+    diffview = {
+      enable = true;
+      defaultArgs = {
+        diffviewOpen = [ "--imply-local" ];
+      };
+    };
   };
 }
