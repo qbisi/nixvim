@@ -161,7 +161,7 @@
     {
       mode = [ "n" ];
       key = "<M-0>";
-      action = "<cmd>Tabclose<cr>";
+      action = "<cmd>tabclose<cr>";
     }
     {
       mode = [ "n" ];
