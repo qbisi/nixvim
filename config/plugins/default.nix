@@ -43,5 +43,6 @@
       settings.highlight.enable = true;
     };
     typst-vim.enable = true;
+    diffview.enable = true;
   };
 }

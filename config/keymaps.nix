@@ -4,6 +4,17 @@
     {
       mode = [
         "n"
+        "v"
+      ];
+      key = "<C-A>";
+      action = "<ESC>ggVG";
+      options = {
+        desc = "Select All";
+      };
+    }
+    {
+      mode = [
+        "n"
         "i"
         "v"
       ];
@@ -38,7 +49,10 @@
       };
     }
     {
-      mode = ["n" "i"];
+      mode = [
+        "n"
+        "i"
+      ];
       key = "<C-n>";
       action = ''
         function()
