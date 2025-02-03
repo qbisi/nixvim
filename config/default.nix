@@ -47,6 +47,8 @@
     virtualedit = "onemore";
     # Allow move across lines.
     whichwrap = "b,s,h,l,<,>";
+    # Complete first full match, next match, etc.
+    wildmode = "longest,full";
   };
 
   extraConfigLua = ''
