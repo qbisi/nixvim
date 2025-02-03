@@ -7,6 +7,7 @@
     ./plugins
     ./keymaps.nix
     ./select.nix
+    ./autocmd.nix
   ];
 
   globals.mapleader = " ";
