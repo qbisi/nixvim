@@ -65,7 +65,7 @@
         "i"
       ];
       key = "<C-s>";
-      action = "<Esc>:update<CR>";
+      action = "<Esc>:update|checktime<CR>";
       options = {
         desc = "Save";
         silent = true;
