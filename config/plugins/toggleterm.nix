@@ -22,7 +22,7 @@
         "t"
       ];
       key = "<c-\\>";
-      action = "<cmd>ToggleTerm<cr>";
+      action = "<cmd>ToggleTerm|checktime<cr>";
       options = {
         desc = "Toggle Terminal";
       };
