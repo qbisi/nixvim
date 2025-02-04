@@ -8,7 +8,7 @@
     # }
     {
       event = [ "FileType" ];
-      command = "set buflisted";
+      command = "only | set buflisted";
       pattern = [ "help" ];
       group = "helpBuffer";
     }
