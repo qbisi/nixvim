@@ -94,7 +94,7 @@
     {
       mode = [ "v" ];
       key = "<C-c>";
-      action = ''"*y'';
+      action = ''"+y'';
     }
     {
       mode = [ "v" ];
