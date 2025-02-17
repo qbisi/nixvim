@@ -64,6 +64,7 @@
   # Clipboard.
   clipboard = {
     providers.xclip.enable = true;
+    providers.wl-copy.enable = true;
   };
 
   # Packages
