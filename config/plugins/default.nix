@@ -35,7 +35,7 @@
     auto-session.enable = true;
     noice.enable = true;
     notify = {
-      backgroundColour = "#000000";
+      settings.background_colour = "#000000";
       enable = true;
     };
     web-devicons.enable = true;
